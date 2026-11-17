@@ -1,0 +1,24 @@
+{
+  "native_menu": {
+    "opened": true,
+    "selected": true,
+    "clicked": true,
+    "error": null,
+    "dialog_title": "Execute Macro"
+  },
+  "before": {
+    "ticks": 1355,
+    "cycles": 7,
+    "t": 4.242925800033845,
+    "ball": [
+      67.01219829589714,
+      0.0,
+      474.04849457374723
+    ]
+  },
+  "pause_button_passed": true,
+  "reset_button_passed": true,
+  "play_button_passed": true,
+  "floating_control_visible": true,
+  "loop_enabled": true
+}

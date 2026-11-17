@@ -1,0 +1,18 @@
+# This repository records the V2 single-ball launcher. Older prototypes,
+# third-party tools, backups, rendered frame sequences and logs stay local.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/MinimalLauncherV2.FCMacro
+!/七号球极简发球机_V2.FCStd
+!/minimal_v2/
+
+/minimal_v2/*
+!/minimal_v2/*.py
+!/minimal_v2/design.json
+!/minimal_v2/verification.json
+!/minimal_v2/native_macro_verification.json
+!/minimal_v2/设计说明与样机清单.md
+!/minimal_v2/assembly.png
+!/minimal_v2/mechanism.png

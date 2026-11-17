@@ -1,0 +1,22 @@
+{
+  "document_name": "SingleBall_ValidatedLayout_V2",
+  "ball_diameter_mm": 245,
+  "ball_min_mm": 239,
+  "ball_max_mm": 248,
+  "ball_mass_kg": 0.65,
+  "launch_angle_deg": 30,
+  "wheel_radius_mm": 70,
+  "wheel_width_mm": 70,
+  "wheel_gap_mm": 232,
+  "wheel_rpm": 1400,
+  "target_ball_speed_m_s": 8.0,
+  "stage_s_mm": -205,
+  "pusher_stroke_mm": 180,
+  "rail_inner_width_mm": 266,
+  "wheel_origin_mm": [60, 0, 470],
+  "outlet_s_mm": 145,
+  "collector_top_z_mm": 2700,
+  "collector_width_mm": 1800,
+  "collector_depth_mm": 1600,
+  "note": "Engineering layout for one size-7 ball. Wheel grip, motor thermal duty, range and stability require a physical prototype; animation is kinematic only."
+}

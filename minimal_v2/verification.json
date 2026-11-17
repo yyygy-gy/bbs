@@ -1,0 +1,62 @@
+{
+  "ball_diameter_mm": 245.0,
+  "ball_operating_range_mm": [
+    239,
+    248
+  ],
+  "wheel_gap_mm": 232,
+  "nominal_radial_compression_per_side_mm": 6.5,
+  "wheel_surface_speed_m_s": 10.263,
+  "target_ball_speed_m_s": 8.0,
+  "target_ball_translation_energy_J": 20.8,
+  "total_rotor_mass_kg": 4.515,
+  "total_rotor_inertia_kg_m2": 0.008764,
+  "stored_rotor_energy_J": 94.19,
+  "rotor_speed_drop_ideal_pct": 11.73,
+  "rigid_nominal_ball_contact_travel_mm": 99.2,
+  "required_average_accelerating_force_N": 209.7,
+  "friction_mu_assumed": 0.65,
+  "required_average_normal_force_per_wheel_N": 161.3,
+  "feeder_design_force_N": 5.19,
+  "estimated_feeder_peak_torque_Nm": 0.56,
+  "main_unit_envelope_mm": [
+    592.5,
+    561.6,
+    544.9
+  ],
+  "invalid_geometry": [],
+  "nominal_path_samples": 74,
+  "rigid_path_collisions": [],
+  "limits": "No tire contact dynamics, transient motor model, strength/stability proof, or prototype launch test. Contact force and speed must be measured; 232 mm gap is adjustable starting point.",
+  "diameter_path_samples": {
+    "239": 103,
+    "245": 103,
+    "248": 103
+  },
+  "all_diameter_path_collisions": [],
+  "wheel_to_rigid_part_collisions": [],
+  "net_launch_aperture_mm": {
+    "width": 340,
+    "top_z": 850
+  },
+  "support_height_adjustment_mm": {
+    "239": -4.092,
+    "245": 0.0,
+    "248": 2.016
+  },
+  "minimum_ball_reaches_pinch": true,
+  "conditional_contact_sizing": {
+    "model": "Symmetric linear effective wheel/ball stiffness, sliding friction mu=0.65, no hysteresis; sizing estimate only",
+    "self_feed_friction_coefficient_lower_bound": 0.267,
+    "effective_stiffness_required_per_side_N_per_mm": 38.18,
+    "predicted_peak_radial_force_each_N": 248.2,
+    "shaft_diameter_mm": 20,
+    "shaft_bending_stress_at_400N_MPa": 29.54,
+    "required_motor_running_torque_each_Nm": [
+      1.023,
+      1.364
+    ]
+  },
+  "feeder_pose_samples": 19,
+  "feeder_motion_collisions": []
+}

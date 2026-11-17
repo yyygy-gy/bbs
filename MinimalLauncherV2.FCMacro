@@ -1,0 +1,28 @@
+import sys
+import types
+import traceback
+import datetime
+from pathlib import Path
+import FreeCADGui as Gui
+import FreeCAD as App
+from PySide import QtCore,QtWidgets
+
+try:
+    module=types.ModuleType('basketball_minimal_v2_player')
+    sys.modules[module.__name__]=module
+    source=Path('D:/basketball/minimal_v2/player.py')
+    exec(compile(source.read_text(encoding='utf-8'),str(source),'exec'),module.__dict__)
+    Gui._minimal_v2_player_module=module
+    module.launch(autoplay=True)
+    Path('D:/basketball/minimal_v2/macro_startup.log').write_text(
+        datetime.datetime.now().isoformat()+' native macro started; autoplay=True\n',encoding='utf-8')
+except Exception:
+    detail=traceback.format_exc()
+    App.Console.PrintError(detail+'\n')
+    Path('D:/basketball/minimal_v2/macro_startup.log').write_text(detail,encoding='utf-8')
+    alert=QtWidgets.QMessageBox(Gui.getMainWindow())
+    alert.setWindowTitle('V2动画启动失败')
+    alert.setText('动画未能启动，详细错误已记录到 macro_startup.log。')
+    alert.setDetailedText(detail)
+    Gui._minimal_v2_error_dialog=alert
+    alert.show()
